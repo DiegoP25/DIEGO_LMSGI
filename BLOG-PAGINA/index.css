@@ -1,0 +1,278 @@
+:root{
+    --blanco: #FFFBFB; /*Header, Footer, Fondo del Main*/
+    --fondo_header_footer: #0E0E0E;
+    --contenido_main: #272524;
+    --like: #F41515;
+    /* --boton: #F8FC05; */
+}
+
+/*Aspectos Generales*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial,black;
+}
+
+/*Cabezera*/
+header{
+    background-color: var(--contenido_main);
+    color: var(--blanco);
+    width: 100%;
+    position: relative;
+    padding: 5px;
+}
+
+.logo-principal{
+    display: inline-block;
+    height: 70px; 
+    width: 70px;
+}
+
+
+.Title{
+    position: absolute;
+    display: inline-block;
+    top: 20px;
+    left: 75px;
+    font-size: 35px;
+}
+
+.navegador{
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+.navegador, footer nav a, .login-button, .content, img{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.ocult-header{  /*Ocultamos los elementos de la barra de navegación*/
+   display: none;
+}
+
+.show-header {
+    display: block;
+}
+
+
+
+/*Despues del Header, Antes del Main*/
+.presentacion{
+    color: var(--blanco);
+    text-align: center;
+    padding: 50px;
+    background-image: url("https://picsum.photos/400/200");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    /* position: static; */
+}
+
+
+/*Cuerpo de Pagina*/
+main{
+    padding: 35px;
+    background-color: var(--blanco);
+    text-align: center;
+}
+
+article{
+    border: 1px solid ;
+    display: inline-block;
+    text-align: center;
+    height: 350px;
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    
+}
+
+/* article:hover{
+    outline: solid 5px red;
+} */
+
+
+article img{
+    width: 100%;
+}
+
+p{
+    color: var(--contenido_main);
+}
+
+img:hover{
+opacity: 0.7;
+}
+
+article:hover{
+    outline: solid 3px var(--contenido_main);
+}
+
+article div{
+    width: 360px;
+    margin: auto;
+    text-align: left;
+}
+
+h4, .content{
+    padding-bottom: 5px;
+}
+
+
+/*FOOTER*/
+footer{
+    background-color: #0E0E0E;
+    color: var(--blanco);
+    padding: 15px;
+    position: relative;
+}
+
+.links-footer, .redes-sociales{
+    display: inline-block;
+}
+
+.links-footer a{
+
+    display: block; 
+    margin: 10px 50px ;
+}
+
+.redes-sociales{
+    position: absolute;
+    right: 60px;
+    top: 35px;
+}
+
+.title-redes-sociales{
+    /* display: static; */
+    text-align: center;
+}
+
+.oculto{
+    display: none;
+}
+
+
+
+
+@media(min-width: 577px) and (max-width: 1024px){ /*tablet*/
+
+
+    article{
+        display: inline-block;
+        margin: 9px;
+        width: 45%;
+        height: 350px;
+    }
+
+
+    article div{
+        width: 100%;
+        height: 100%;
+        padding: 1px;
+    }
+
+
+    .link_1_2{
+        position: relative;
+        top: 10px;
+    }
+
+    .link_3_4{
+        position: relative;
+        bottom: 49px;
+        left: 135px;
+    }
+
+}
+
+@media(min-width: 1025px){ /*desktop*/
+   
+    
+    /*HEADER*/
+    .ocult-header{
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        right: 100px;
+        font-size: 20px;
+    }
+
+    .ocult-header a{
+        margin-right: 25px;
+    }
+
+    .login-button{
+        font-size: 20px;
+        padding: 5px 2px;
+        /* border-radius: 5px; */
+    }
+
+    
+    .navegador{
+        display: none;
+    }
+
+
+    /*MAIN*/
+
+    article{
+        display: inline-block;
+        margin: 9px;
+        width: 25%;
+        height: 350px;
+        max-width: 500px;
+        margin: 0px 10px 10px;
+    }
+
+
+    article div{
+        width: 100%;
+        height: fit-content;
+        padding: 1px;
+    }
+
+
+    /*FOOTER*/
+    .link_1_2{
+        position: relative;
+        top: 10px;
+    }
+
+    .link_3_4{
+        position: relative;
+        bottom: 49px;
+        left: 135px;
+    }
+
+    .oculto{
+        display: inline-block;
+        position: relative;
+        bottom: 35px;
+    }
+
+    .oculto img{
+        width: 70px;
+        height: 70px;
+    }
+    .title-redes-sociales{
+        display: none;
+    }
+
+    .redes-sociales img{
+        
+        width: 45px;
+        height: 45px;
+    }
+
+}
+
+
+
