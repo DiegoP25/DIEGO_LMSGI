@@ -1,0 +1,216 @@
+
+:root{
+    --blanco: #FFFBFB; /*Header, Footer, Fondo del Main*/
+    --fondo_header_footer: #0E0E0E;
+    --contenido_main: #272524;
+    --like: #F41515;
+    --Titulo-boton: #FFFF16;
+}
+
+
+/*Header*/
+header{
+    position: relative;
+    background-color: var(--fondo_header_footer);
+    width: 100%;
+    padding: 5px;
+}
+
+header, a{
+    color: var(--blanco);
+}
+
+.logo-principal, .title, .navegador{
+    display: inline-block;
+}
+
+.logo-principal{
+    height: 70px; 
+    width: 70px;
+}
+
+.title, .navegador{
+    position: absolute;
+}
+
+.title{
+    top: 20px;
+    left: 75px;
+    font-size: 35px;
+}
+
+.navegador{
+    top: 20px;
+    right: 25px;
+}
+
+.navegador, .login-button, footer nav a{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.ocult-header{  /*Ocultamos los elementos de la barra de navegación*/
+   display: none;
+   /* position: absolute; */
+   /* background-color: black; */
+   /* width: 100%; */
+}
+
+.ocult-header div{
+    display: flex;
+    flex-direction: column;
+}
+
+.ocult-header div a, .ocult-header div button{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+}
+
+
+.show-header { /*Menu de Opciones*/
+    display: block;
+}
+
+.login-button{ /*Cambio de color y border al boton*/
+    background-color: var(--Titulo-boton);
+    border-radius: 8px;
+}
+
+
+
+/*FOOTER*/
+footer{
+    background-color: var(--fondo_header_footer);
+    padding: 15px;
+    position: relative;
+}
+
+footer, .title-redes-sociales{
+    color: var(--blanco);
+}
+
+.title-redes-sociales{
+    text-align: center;
+}
+
+.links-footer, .redes-sociales{
+    display: inline-block;
+}
+
+.links-footer a{
+    display: block; 
+    margin: 10px 50px ;
+}
+
+.redes-sociales{
+    position: absolute;
+    right: 60px;
+    top: 35px;
+}
+
+.logo-footer-oculto{
+    display: none;
+}
+
+
+@media(min-width: 577px) and (max-width: 1024px){ /*tablet*/
+
+    /* Footer */
+    .link_1_2, .link_3_4{
+        position: relative;
+    }
+
+    .link_1_2{
+        top: 10px;
+    }
+
+    .link_3_4{
+        bottom: 49px;
+        left: 135px;
+    }
+
+}
+
+
+@media(min-width: 1025px){ /*desktop*/
+
+    /*HEADER*/
+    .ocult-header{
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        right: 100px;
+        font-size: 20px;
+    }
+
+    .ocult-header a{ 
+        margin-right: 25px; 
+    }
+
+    .ocult-header div{
+        flex-direction: row;
+        margin: -15px;
+    }
+
+    .ocult-header div a{
+        border: none;
+    }
+
+    .login-button{
+        font-size: 20px;
+        padding: 5px 2px;
+        /* border-radius: 5px; */
+    }
+
+    .navegador{
+        display: none;
+    }
+
+
+    /*FOOTER*/
+    .link_1_2, .link_3_4, .logo-footer-oculto{
+        position: relative;
+    }
+
+    .link_1_2{
+        top: 10px;
+    }
+
+    .link_3_4{
+        bottom: 49px;
+        left: 135px;
+    }
+
+    .logo-footer-oculto{
+        display: inline-block;
+        bottom: 35px;
+    }
+
+    .logo-footer-oculto img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .title-redes-sociales{
+        font-size: 20px;
+        padding-bottom: 15px;        
+    }
+
+    .redes-sociales img{
+        width: 45px;
+        height: 45px;
+    }
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,155 @@
+:root{
+    --blanco: #FFFBFB; /*Header, Footer, Fondo del Main*/
+    --fondo_header_footer: #0E0E0E;
+    --contenido_main: #272524;
+    --like: #F41515;
+    --Titulo-boton: #FFFF16;
+    /* --boton: #F8FC05; */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial,black;
+}
+
+
+/*Despues del Header, Antes del Main*/
+.presentacion{
+    color: var(--Titulo-boton);
+    text-align: center;
+    padding: 50px;
+    background-image: url("img/Iconos/banner-gym.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+}
+
+/*Cuerpo de Pagina*/
+
+main{
+    background-color: var(--blanco);
+}
+
+.articulo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 35px;
+}
+
+main, article{
+    text-align: center;
+}
+
+article{
+    border: 1px solid ;
+    /* display: inline-block; */
+    padding-bottom: 10px;
+    /* height: 350px; */
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+article, article div{
+    margin: auto;
+} 
+
+article div{
+    width: 360px;
+    text-align: left;
+}
+
+article:hover{
+    outline: solid 3px var(--contenido_main);
+}
+
+/* article:hover{
+    outline: solid 5px red;
+} */
+
+.content, img{
+    cursor: pointer;
+}
+
+article img{
+    width: 100%;
+}
+
+p{
+    color: var(--contenido_main);
+}
+
+img:hover{
+opacity: 0.7;
+}
+
+h4, .content{ 
+    padding-bottom: 5px;
+}
+
+
+.imagen-biceps{
+    width: 360px;
+    height: 180px;
+}
+
+
+@media(min-width: 577px) and (max-width: 1024px){ /*tablet*/
+
+    /*MAIN*/
+     /* h1{
+        display: block;
+        justify-self: center;
+    }  */
+
+    .articulo{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    article{
+        /* display: inline-block; */
+        margin: 9px;
+        width: 40%;
+        height: 350px;
+    }
+
+    article div{
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+    }
+
+
+}
+
+@media(min-width: 1025px){ /*desktop*/
+   
+    /*MAIN*/
+    .articulo{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    article{
+        display: inline-block;
+        margin: 9px;
+        width: 25%;
+        height: 400px;
+        max-width: 500px;
+        margin: 0px 10px 10px;
+    }
+
+    article div{
+        width: 100%;
+        height: fit-content;
+        padding: 1px;
+    }
+
+}
+
+
+

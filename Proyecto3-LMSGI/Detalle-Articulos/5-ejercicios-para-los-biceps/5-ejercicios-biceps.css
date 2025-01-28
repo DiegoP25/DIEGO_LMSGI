@@ -1,0 +1,119 @@
+
+:root{
+    --blanco: #FFFBFB; /*Header, Footer, Fondo del Main*/
+    --fondo_header_footer: #0E0E0E;
+    --contenido_main: #272524;
+    --like: #F41515;
+    --Titulos: #FFFF16;
+    /* --boton: #F8FC05; */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial,black;
+}
+
+
+/*Despues del Header, Antes del Main*/
+.presentacion{
+    color: var(--Titulos);
+    text-align: center;
+    padding: 50px;
+    background-image: url("../../img/Iconos/banner-gym.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+}
+
+/*Main*/
+main{
+    display: flex;
+    background-color: var(--blanco);
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+
+main, a{
+    color: var(--contenido_main);
+}
+
+.subtitulo{
+    font-weight: bold;
+}
+
+.introduccion{
+    /* max-width: 800px; */
+    margin: 20px;
+    font-size: 1rem;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* list-style-type: none; */
+    padding: 0;
+    font-size: 1rem; /* Tamaño base */
+}
+
+.lista li{
+    margin: 20px 0;
+    text-align: left;
+    /* min-width: 600px; */
+}
+
+.lista img.img-lista {
+    width: 100%;
+    height: auto;
+}
+
+.parrafo1{
+    padding-bottom: 15px;
+}
+
+.img-lista{
+    height: 400px;
+    width: 400px;
+}
+
+@media(min-width: 577px) and (max-width: 1024px){ /*tablet*/
+
+    .lista li {
+        max-width: 600px;
+    }
+
+    .introduccion, .lista {
+        font-size: 1.1rem; /* Tamaño de la letra para tablets */
+    }
+
+}
+
+
+@media(min-width: 1025px){ /*desktop*/
+
+    .main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .lista {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .lista li {
+        flex: 1 1 30%;
+        max-width: 30%;
+        margin: 20px;
+    }
+
+    .introduccion, .lista {
+        font-size: 1.2rem; /* Aumento del tamaño de la letra para escritorio */
+    }
+
+}
