@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--Se cambió "UTF-U" a "UTF-8"-->
+<documento>
+    <p>Mi Primer <destacar importancia='1'>documento XML</destacar></p>
+    <!--Se cerró correctamente la etiqueta destacar-->
+
+    <p>Comienza con la etiqueta &lt;documento&gt;</p>
+    <!--corregido &lt;-->
+
+    <p>A continuacion colocamos un elemento sin
+    contenido:</p>
+    <!--Se le agregó dos puntos ":" al final de la oración-->
+
+    <imagen fichero="imagen.gif"/>
+    <!--El elemento le faltaba un "/" para cerrarlo-->
+</documento>

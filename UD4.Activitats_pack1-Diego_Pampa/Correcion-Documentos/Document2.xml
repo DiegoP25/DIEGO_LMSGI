@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--Se agregó: encoding="UTF-8"? -->
+
+<libros>
+    <libro id="quijote">
+        <titulo>El Quijote</titulo>
+
+        <!--no se puede repetir atributos dentro de la misma etiqueta-->
+        <autor nombre='cervantes'/> <!--Etiqueta correctamente cerrada: /> -->
+        <!--Faltaban las comillas a: cervantes-->
+
+        <descripcion>Es el mejor libro de
+        cervantes.</descripcion>
+        <!--Ajuste de ortografia en la parte de: "m<jor" por "mejor"-->
+
+    </libro>
+    <!--Se cerró correctamente la etiqueta: </libro>  -->
+
+</libros>
+<!--Cambio en la primera letra de la etiqueta libros: 
+    "L" Mayúscula por "l" Minúscula-->
+
+    

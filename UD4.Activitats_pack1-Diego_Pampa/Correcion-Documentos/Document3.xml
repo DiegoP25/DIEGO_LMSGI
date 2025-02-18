@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--La primera palabra X estaba en mayúscula, cambiada a x minúscula-->
+
+<figuras> <!--Elemento raiz llamado: figuras, agregado-->
+
+    <!--El error es lo mismo en los tres elementos-->
+    <triangulo base="7" altura="5"/>
+    <triangulo base="2" altura="6"/>
+    <triangulo base="3" altura="3"/>
+    <!--1er error: faltaba un espacio despues de: base="7", base="2" y base="3" -->
+    <!--2do error: Faltaba cerrar correctamente los 3 elementos : /> -->
+
+</figuras>
