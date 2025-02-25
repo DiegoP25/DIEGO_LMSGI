@@ -1,0 +1,20 @@
+<!-- ?: Puede haber 0 o uno-->
+<!-- +: Puede haber 1 o mas-->
+<!-- *: Puede haber 0, 1 o mas-->
+<!-- |: Una elección entre varios elementos, puede
+        elegir uno entre varios elementos posibles-->
+
+
+<!ELEMENT pedidos (pedido+)>
+<!ELEMENT pedido (tractor+)>
+<!ELEMENT tractor (componente+)>
+<!ELEMENT componente (fecha_entrega, peso, numero_serie, kmmaxims?)>
+<!ATTLIST componente nom_fabricante CDATA #REQUIRED fragil (si | no) #REQUIRED>
+<!ELEMENT fecha_entrega (#PCDATA)>
+<!ATTLIST fecha_entrega dia CDATA #IMPLIED>
+<!ATTLIST fecha_entrega mes CDATA #REQUIRED>
+<!ATTLIST fecha_entrega any CDATA #REQUIRED>
+<!ELEMENT peso (#PCDATA)>
+<!ATTLIST peso unidad CDATA #REQUIRED>
+<!ELEMENT numero_serie (#PCDATA)>
+<!ELEMENT kmmaxims (#PCDATA)>

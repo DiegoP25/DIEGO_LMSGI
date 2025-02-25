@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE pedidos SYSTEM 'UD4-ex2-2.dtd'>
+
+
+<pedidos>
+
+     <pedido>
+        <tractor>
+          <componente nom_fabricante='Fabricante1' fragil='no'>
+               <fecha_entrega mes='03' any='2024'/>
+               <peso unidad='gramos'>500</peso>
+               <numero_serie>6789ABC</numero_serie>
+               <kmmaxims>10000</kmmaxims>
+          </componente>
+        </tractor>
+     </pedido>
+     
+     <pedido>
+
+        <tractor>
+          <componente nom_fabricante='Fabricante3' fragil='no'>
+               <fecha_entrega dia='15' mes='03' any='2024'/>
+               <peso unidad='gramos'>500</peso>
+               <numero_serie>6789ABC</numero_serie>
+               <kmmaxims>10000</kmmaxims>
+          </componente>
+        </tractor>
+
+        <tractor>
+          <componente nom_fabricante='Fabricante2' fragil='si'>
+               <fecha_entrega mes='04' any='2023'/>
+               <peso unidad='gramos'>700</peso>
+               <numero_serie>6789ADC</numero_serie>
+               <kmmaxims>50000</kmmaxims>
+          </componente>
+
+          <componente nom_fabricante='Fabricante1' fragil='no'>
+               <fecha_entrega mes='03' any='2024'/>
+               <peso unidad='gramos'>500</peso>
+               <numero_serie>6789ABC</numero_serie>
+          </componente>
+        </tractor>
+     </pedido>
+
+</pedidos>

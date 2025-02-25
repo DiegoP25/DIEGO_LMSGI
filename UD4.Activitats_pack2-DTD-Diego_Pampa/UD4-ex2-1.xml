@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding="UTF-8"?>
+
+
+<!DOCTYPE archivo [
+<!ELEMENT archivo (operacion+)>
+<!ELEMENT operacion (venta | compra)+>
+<!ELEMENT venta (titulo+, cantidad, entregado?, importe)>
+<!ELEMENT compra (titulo+, proveedor, fecha)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT entregado (#PCDATA)>
+<!ELEMENT importe (#PCDATA)>
+<!ATTLIST importe moneda CDATA #REQUIRED>
+<!ELEMENT proveedor (#PCDATA)>
+<!ELEMENT fecha (dia, mes, anio)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
+]>
+
+
+<archivo>
+
+    <operacion>
+        <venta>
+            <titulo>Libro A</titulo>
+            <titulo>Libro B</titulo>
+            <cantidad>15</cantidad>
+            <entregado>si</entregado>
+            <importe moneda='euros'>50</importe>
+        </venta>
+
+        <compra>
+            <titulo>Libro C</titulo>
+            <titulo>Libro D</titulo>
+            <proveedor>Diego</proveedor>
+            <fecha>
+                <dia>15</dia>
+                <mes>12</mes>
+                <anio>2024</anio>
+            </fecha>
+        </compra>
+    </operacion>
+
+    <operacion>
+        <venta>
+            <titulo>Libro A</titulo>
+            <cantidad>10</cantidad>
+            <entregado>si</entregado>
+            <importe moneda='euros'>50</importe>
+        </venta>
+
+        <venta>
+            <titulo>Libro A</titulo>
+            <titulo>Libro B</titulo>
+            <titulo>Libro C</titulo>
+            <cantidad>30</cantidad>
+            <entregado>si</entregado>
+            <importe moneda='euros'>150</importe>
+        </venta>
+    </operacion>
+
+    <operacion>
+        <compra>
+            <titulo>Libro E</titulo>
+            <proveedor>Roger</proveedor>
+            <fecha>
+                <dia>05</dia>
+                <mes>01</mes>
+                <anio>2018</anio>
+            </fecha>
+        </compra>
+
+        <compra>
+            <titulo>Libro E</titulo>
+            <titulo>Libro E</titulo>
+            <proveedor>Luca</proveedor>
+            <fecha>
+                <dia>02</dia>
+                <mes>10</mes>
+                <anio>2020</anio>
+            </fecha>
+        </compra>
+
+        <compra>
+            <titulo>Libro F</titulo>
+            <titulo>Libro G</titulo>
+            <titulo>Libro H</titulo>
+            <proveedor>Diego</proveedor>
+            <fecha>
+                <dia>12</dia>
+                <mes>05</mes>
+                <anio>2023</anio>
+            </fecha>
+        </compra>
+    </operacion>
+
+</archivo>
