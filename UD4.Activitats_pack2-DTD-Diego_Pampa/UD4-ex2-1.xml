@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding="UTF-8"?>
 
 
-<!DOCTYPE archivo [
-<!ELEMENT archivo (operacion+)>
-<!ELEMENT operacion (venta | compra)+>
+<!DOCTYPE archivo_De_empresa [
+<!ELEMENT archivo_De_empresa (operaciones+)>
+<!ELEMENT operaciones (venta | compra)+>
 <!ELEMENT venta (titulo+, cantidad, entregado?, importe)>
 <!ELEMENT compra (titulo+, proveedor, fecha)>
 <!ELEMENT titulo (#PCDATA)>
@@ -19,50 +19,50 @@
 ]>
 
 
-<archivo>
+<archivo_De_empresa>
 
-    <operacion>
+    <operaciones>
         <venta>
-            <titulo>Libro A</titulo>
-            <titulo>Libro B</titulo>
+            <titulo>Libro 1</titulo>
+            <titulo>Libro 2</titulo>
             <cantidad>15</cantidad>
             <entregado>si</entregado>
             <importe moneda='euros'>50</importe>
         </venta>
 
         <compra>
-            <titulo>Libro C</titulo>
-            <titulo>Libro D</titulo>
+            <titulo>Libro 3</titulo>
+            <titulo>Libro 4</titulo>
             <proveedor>Diego</proveedor>
             <fecha>
                 <dia>15</dia>
-                <mes>12</mes>
+                <mes>05</mes>
                 <anio>2024</anio>
             </fecha>
         </compra>
-    </operacion>
+    </operaciones>
 
-    <operacion>
+    <operaciones>
         <venta>
-            <titulo>Libro A</titulo>
+            <titulo>Libro 8</titulo>
             <cantidad>10</cantidad>
-            <entregado>si</entregado>
+            <entregado>no</entregado>
             <importe moneda='euros'>50</importe>
         </venta>
 
         <venta>
-            <titulo>Libro A</titulo>
-            <titulo>Libro B</titulo>
-            <titulo>Libro C</titulo>
+            <titulo>Libro 6</titulo>
+            <titulo>Libro 14</titulo>
+            <titulo>Libro 10</titulo>
             <cantidad>30</cantidad>
             <entregado>si</entregado>
             <importe moneda='euros'>150</importe>
         </venta>
-    </operacion>
+    </operaciones>
 
-    <operacion>
+    <operaciones>
         <compra>
-            <titulo>Libro E</titulo>
+            <titulo>Libro 10</titulo>
             <proveedor>Roger</proveedor>
             <fecha>
                 <dia>05</dia>
@@ -72,9 +72,9 @@
         </compra>
 
         <compra>
-            <titulo>Libro E</titulo>
-            <titulo>Libro E</titulo>
-            <proveedor>Luca</proveedor>
+            <titulo>Libro 5</titulo>
+            <titulo>Libro 5</titulo>
+            <proveedor>Diego</proveedor>
             <fecha>
                 <dia>02</dia>
                 <mes>10</mes>
@@ -83,16 +83,16 @@
         </compra>
 
         <compra>
-            <titulo>Libro F</titulo>
-            <titulo>Libro G</titulo>
-            <titulo>Libro H</titulo>
+            <titulo>Libro 15</titulo>
+            <titulo>Libro 20</titulo>
+            <titulo>Libro 34</titulo>
             <proveedor>Diego</proveedor>
             <fecha>
                 <dia>12</dia>
-                <mes>05</mes>
+                <mes>01</mes>
                 <anio>2023</anio>
             </fecha>
         </compra>
-    </operacion>
+    </operaciones>
 
-</archivo>
+</archivo_De_empresa>
