@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ?: Puede haber 0 o uno-->
+<!-- +: Puede haber 1 o mas-->
+<!-- *: Puede haber 0, 1 o mas-->
+<!-- |: Una elección entre varios elementos, puede
+        elegir uno entre varios elementos posibles-->
+
+
+<!DOCTYPE lote [
+<!ELEMENT entregas (entrega+)>
+<!ELEMENT entrega (lote+)>
+<!ELEMENT lote (palet+)>
+<!ELEMENT palet (nombre_cajas, contenido, peso, forma_manipulacion)>
+<!ELEMENT nombre_cajas (#PCDATA)>
+<!ELEMENT contenido (componente+)>
+<!ELEMENT componente (nombre, procedencia*, nro_Serie, peso, unidad_peso?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT procedencia (pais*)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT nro_Serie (#PCDATA)>
+<!ELEMENT peso (#PCDATA)>
+<!ELEMENT unidad_peso (#PCDATA)>
+<!ELEMENT forma_manipulacion (#PCDATA)>
+]>
+
+
+<lote>
+    <palet>
+
+        <nombre_cajas>10</nombre_cajas>
+
+        <contenido>
+            <componente>
+                <nombre>Componente1</nombre>
+                <procedencia>
+                    <pais>España</pais> 
+                </procedencia>
+                <nro_Serie>23589</nro_Serie>
+                <peso>4</peso>
+                <unidad_peso>kg</unidad_peso>
+            </componente>
+        </contenido>
+
+        <peso>40</peso>
+
+        <forma_manipulacion>fragil</forma_manipulacion>
+
+    </palet>
+
+</lote>       
+    
+
+
+
+    

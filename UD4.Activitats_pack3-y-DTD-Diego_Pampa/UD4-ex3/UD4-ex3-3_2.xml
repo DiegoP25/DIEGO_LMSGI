@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<pedido>
+    <lapiz>
+        <numero>74</numero>
+    </lapiz>
+    <cuaderno></cuaderno>
+    <lapiz>
+        <numero>789</numero>
+    </lapiz>
+    <libro titulo="Libro14"/>
+    <cuaderno num_paginas="144"></cuaderno>
+    <libro titulo='Libro17'/>
+    <cuaderno num_paginas='206'></cuaderno>
+    <cuaderno></cuaderno>
+    <cuaderno num_paginas='314'></cuaderno>
+</pedido>

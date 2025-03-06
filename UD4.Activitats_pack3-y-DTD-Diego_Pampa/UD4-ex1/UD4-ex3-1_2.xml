@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<lote>
+    <palet>
+
+        <nombre_cajas>15</nombre_cajas>
+
+        <contenido>
+            <componente>
+                <nombre>Componente2</nombre>
+                <procedencia>
+                    <pais>Francia</pais> 
+                    <pais>Portugal</pais> 
+                </procedencia>
+                <nro_Serie>26118</nro_Serie>
+                <peso>5</peso>
+                <unidad_peso>kg</unidad_peso>
+            </componente>
+        </contenido>
+
+        <peso>50</peso>
+
+        <forma_manipulacion>fragil</forma_manipulacion>
+
+    </palet>
+
+
+    <palet>
+
+        <nombre_cajas>20</nombre_cajas>
+
+        <contenido>
+            <componente>
+                <nombre>Componente3</nombre>
+                <procedencia>
+                    <pais>Italia</pais> 
+                    <pais>Alemania</pais> 
+                    <pais>Croacia</pais>
+                </procedencia>
+                <nro_Serie>31034</nro_Serie>
+                <peso>10</peso>
+            </componente>
+        </contenido>
+
+        <peso>30</peso>
+
+        <forma_manipulacion>fragil</forma_manipulacion>
+
+    </palet>
+
+
+    <palet>
+
+        <nombre_cajas>14</nombre_cajas>
+
+        <contenido>
+            <componente>
+                <nombre>Componente4</nombre>
+                <procedencia>
+                    <pais>Zuiza</pais> 
+                    <pais>Paises Bajos</pais> 
+                </procedencia>
+                <nro_Serie>65479</nro_Serie>
+                <peso>7</peso>
+                <unidad_peso>kg</unidad_peso>
+            </componente>
+        </contenido>
+
+        <peso>80</peso>
+
+        <forma_manipulacion>fragil</forma_manipulacion>
+
+    </palet>
+    
+</lote>

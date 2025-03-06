@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE curso [
+<!ELEMENT curso (alumno+)>
+<!ELEMENT alumno (DNI, nombre, apellido?, asignatura+)>
+<!ELEMENT DNI (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT asignatura (nom_asignatura, profesor)>
+<!ATTLIST asignatura codigo CDATA #REQUIRED>
+<!ELEMENT nom_asignatura (#PCDATA)>
+<!ELEMENT profesor (NRP, nom_prof, cognom_prof?)>
+<!ELEMENT NRP (#PCDATA)>
+<!ELEMENT nom_prof (#PCDATA)>
+<!ELEMENT cognom_prof (#PCDATA)>
+]>
+
+
+<curso>
+
+    <alumno>
+        <DNI>12345678A</DNI>
+        <nombre>Juan</nombre>
+        <apellido>Pérez</apellido>
+            <asignatura codigo="MAT101">
+                <nom_asignatura>Matemáticas</nom_asignatura>
+                <profesor>
+                    <NRP>001</NRP>
+                    <nom_prof>María</nom_prof>
+                    <cognom_prof>García</cognom_prof>
+                </profesor>
+            </asignatura> 
+    </alumno>
+    
+</curso>

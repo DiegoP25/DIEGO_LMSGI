@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<lista>
+
+    <futuro precio="200">
+        <produc_anterior></produc_anterior> <!--Nueva York-->
+        <producto>producto</producto>
+        <mercado>EE.UU</mercado>
+    </futuro>
+
+    <futuro precio="550">
+        <produc_anterior></produc_anterior> <!--Frankfurt-->
+    </futuro>
+
+    <divisa precio="5.4" estable="no">
+        <produc_anterior></produc_anterior> <!--Frankfurt-->
+    </divisa>
+
+    <divisa precio="2.9" estable="sí">
+        <produc_anterior></produc_anterior> <!--Madrid-->
+    </divisa>
+    
+    <divisa precio="3.1">
+        <produc_anterior></produc_anterior> <!--Madrid-->
+    </divisa>
+
+    <bono precio="310">
+        <produc_anterior></produc_anterior> <!--Nueva York-->
+        <pais_de_procedencia>EE.UU.</pais_de_procedencia>
+    </bono>
+
+    <bono precio="470" estable='si'>
+        <produc_anterior></produc_anterior> <!--Frankfurt-->
+        <pais_de_procedencia>EE.UU.</pais_de_procedencia>
+    </bono>
+
+    <letra precio="165">
+        <produc_anterior></produc_anterior> <!--Nueva York-->
+    </letra>
+
+    <letra precio="347">
+        <produc_anterior></produc_anterior> <!--Tokio-->
+    </letra>
+
+</lista>

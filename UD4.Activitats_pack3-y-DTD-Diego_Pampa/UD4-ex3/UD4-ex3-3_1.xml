@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE pedido [
+<!ELEMENT pedido (libro | cuaderno | lapiz)*>
+<!ELEMENT libro (#PCDATA)>
+<!ATTLIST libro titulo CDATA #REQUIRED>
+<!ELEMENT cuaderno (#PCDATA)>
+<!ATTLIST cuaderno num_paginas CDATA #IMPLIED> <!-- atributo opcional-->
+<!ELEMENT lapiz (numero)>
+<!ELEMENT numero (#PCDATA)>
+]>
+
+<pedido>
+    <libro titulo="Libro1"/>
+    <libro titulo="La Odisea"/>
+    <cuaderno num_paginas="100"/> 
+    <lapiz>
+        <numero>640</numero>
+    </lapiz>
+    <libro titulo="La Odisea"/>
+    <lapiz>
+        <numero>972</numero>
+    </lapiz>
+    <lapiz>
+        <numero>789</numero>
+    </lapiz>
+    <cuaderno></cuaderno>
+    <libro titulo="Moby Dick"/>
+    <cuaderno num_paginas="150"></cuaderno>
+    <cuaderno></cuaderno>
+</pedido>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE lista [
+<!ELEMENT lista (futuro+, divisa+, bono+, letra+)>
+<!ELEMENT futuro (produc_anterior, producto?, mercado?)>
+<!ATTLIST futuro precio CDATA #REQUIRED>
+<!ELEMENT produc_anterior (#PCDATA)>
+<!ELEMENT producto (#PCDATA)>
+<!ELEMENT mercado (#PCDATA)>
+<!ELEMENT divisa (produc_anterior)>
+<!ATTLIST divisa precio CDATA #REQUIRED estable CDATA #IMPLIED>
+<!ELEMENT bono (produc_anterior, pais_de_procedencia)>
+<!ATTLIST bono precio CDATA #REQUIRED estable CDATA #IMPLIED>
+<!ELEMENT pais_de_procedencia (#PCDATA)>
+<!ELEMENT letra (produc_anterior)>
+<!ATTLIST letra precio CDATA #REQUIRED>
+]>
+
+
+<lista>
+    <futuro precio="100">
+        <produc_anterior></produc_anterior> <!--Madrid-->
+         <producto>producto</producto>
+        <mercado>EE.UU.</mercado>
+    </futuro>
+    
+    <divisa precio="1.2" estable="sí">
+        <produc_anterior></produc_anterior> <!--Tokio-->
+    </divisa>
+
+    <bono precio="150" estable="no">
+        <produc_anterior></produc_anterior> <!--Frankfurt-->
+        <pais_de_procedencia>EE.UU.</pais_de_procedencia>
+    </bono>
+
+    <letra precio="215">
+        <produc_anterior></produc_anterior> <!--Nueva York-->
+    </letra>
+    
+</lista>

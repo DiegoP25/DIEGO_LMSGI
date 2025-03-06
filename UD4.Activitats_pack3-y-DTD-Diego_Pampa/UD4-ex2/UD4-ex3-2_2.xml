@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<curso>
+
+    <alumno>
+        <DNI>98765161B</DNI>
+        <nombre>Jose</nombre>
+        <apellido>Fuentes</apellido>
+            <asignatura codigo="SOC202">
+                <nom_asignatura>Sociales</nom_asignatura>
+                <profesor>
+                    <NRP>002</NRP>
+                    <nom_prof>Ciro</nom_prof>
+                </profesor>
+            </asignatura>
+    </alumno>
+
+    <alumno>
+        <DNI>54135987C</DNI>
+        <nombre>Alex</nombre>
+            <asignatura codigo="FIS303">
+                <nom_asignatura>Fisica</nom_asignatura>
+                <profesor>
+                    <NRP>003</NRP>
+                    <nom_prof>Alonso</nom_prof>
+                    <cognom_prof>Pons</cognom_prof>
+                </profesor>
+            </asignatura>
+    </alumno>
+
+</curso>
