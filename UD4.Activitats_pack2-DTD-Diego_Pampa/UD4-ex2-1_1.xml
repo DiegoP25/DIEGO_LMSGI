@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding="UTF-8"?>
+
+
+<!DOCTYPE archivo_De_empresa [
+<!ELEMENT archivo_De_empresa (operaciones+)>
+<!ELEMENT operaciones (venta | compra)+>
+<!ELEMENT venta (titulo+, cantidad, entregado?, importe)>
+<!ELEMENT compra (titulo+, proveedor, fecha)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT entregado (#PCDATA)>
+<!ELEMENT importe (#PCDATA)>
+<!ATTLIST importe moneda CDATA #REQUIRED>
+<!ELEMENT proveedor (#PCDATA)>
+<!ELEMENT fecha (dia, mes, anio)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
+]>
+
+
+<archivo_De_empresa>
+
+    <operaciones>
+        <venta>
+            <titulo>Libro 1</titulo>
+            <titulo>Libro 2</titulo>
+            <cantidad>15</cantidad>
+            <entregado>si</entregado>
+            <importe moneda='euros'>50</importe>
+        </venta>
+
+        <compra>
+            <titulo>Libro 3</titulo>
+            <titulo>Libro 4</titulo>
+            <proveedor>Diego</proveedor>
+            <fecha>
+                <dia>15</dia>
+                <mes>05</mes>
+                <anio>2024</anio>
+            </fecha>
+        </compra>
+    </operaciones>
+
+    
+
+</archivo_De_empresa>
